@@ -13,7 +13,7 @@ export default function Footer() {
           <Link to="/blog">Blog</Link>
           <Link to="/guides">Guides</Link>
           <a
-            href="https://linuxer.substack.com/subscribe"
+            href="https://taniarascia.substack.com/subscribe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,14 +21,14 @@ export default function Footer() {
           </a>
           <Link to="/rss.xml">RSS feed</Link>
           <a
-            href="https://ko-fi.com/linuxer"
+            href="https://ko-fi.com/taniarascia"
             target="_blank"
             rel="noopener noreferrer"
           >
             Ko-fi
           </a>
           <a
-            href="https://patreon.com/linuxer"
+            href="https://patreon.com/taniarascia"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +46,7 @@ export default function Footer() {
             <img src={gatsby} className="footer-img" alt="Gatsby" />
           </a>
           <a
-            href="https://github.com/linuxer"
+            href="https://github.com/taniarascia"
             title="Open-source on GitHub"
             target="_blank"
             rel="noopener noreferrer"

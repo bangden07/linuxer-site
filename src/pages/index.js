@@ -35,7 +35,7 @@ export default function BlogIndex({ data }) {
       <Helmet title={config.siteTitle} />
       <SEO />
       <section className="small lead">
-        <h1>Hey, Saya Linuxer</h1>
+        <h1>Hey, I'm Tania</h1>
         <p className="subtitle">
           I'm a software engineer, technical writer, and{' '}
           <a

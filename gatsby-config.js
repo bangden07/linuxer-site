@@ -7,7 +7,7 @@ module.exports = {
     pathPrefix: '/',
     siteUrl: 'https://www.linuxer.or.id',
     description:
-      'Panduan belajar linux dan tutorial linux.',
+      'Media belajar online dan tutorial lengkap tentang linux.',
     feedUrl: 'https://www.linuxer.or.id/rss.xml',
     logo: 'https://www.linuxer.or.id/logo.png',
   },
@@ -21,13 +21,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Linuxer - Linux User',
+        name: 'Linuxer',
         short_name: 'Linuxer',
         description:
-          'Panduan belajar linux dan tutorial linux.',
+          'Media belajar online dan tutorial lengkap tentang linux.',
         start_url: '/',
         background_color: 'white',
-        theme_color: '#5183f5',
+        theme_color: '#3498db',
         display: 'minimal-ui',
         icon: `static/logo.png`,
       },
@@ -86,7 +86,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Linuxer | RSS Feed',
+            title: 'Tania Rascia | RSS Feed',
           },
         ],
       },

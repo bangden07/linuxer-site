@@ -3,6 +3,6 @@ export default {
   siteUrl: 'https://www.linuxer.or.id',
   siteLogo: '/logo.png',
   description:
-    'Panduan belajar online linux dan tutorial linux.',
+    'Media belajar online dan tutorial lengkap tentang linux.',
   userTwitter: 'linuxer',
 }
