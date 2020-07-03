@@ -35,29 +35,27 @@ export default function BlogIndex({ data }) {
       <Helmet title={config.siteTitle} />
       <SEO />
       <section className="small lead">
-        <h1>Hey, I'm Tania</h1>
+        <h1>Halo, Saya Linuxer</h1>
         <p className="subtitle">
-          I'm a software engineer, technical writer, and{' '}
+          Linuxer merupakan media belajar online yang bersifat{' '}
           <a
-            href="https://github.com/taniarascia"
+            href="https://opensource.org/"
             target="_blank"
             rel="noreferrer"
           >
-            open source
-          </a>{' '}
-          creator. This website is a compendium of the things I have learned
-          over the years, and also my "digital garden".
+            Open Source
+          </a>.{' '}
+          Siapapun dapat ikut serta berkontribusi dengan cara membuat konten artikel
+          yang berhubungan dengan Linux dan bersifat tutorial dan/atau informasi.
         </p>
         <p>
-          I aim to create a beautiful corner of the web free of ads, sponsored
-          posts, newsletter pop-ups, affiliate links, and the rest of the
-          annoying noise we're so accustomed to seeing on the internet these
-          days.
+          Linuxer bukanlah komunitas yang terfokus dalam suatu kelompok.
+          Melainkan kami membuka lebar untuk para kontributor, siapapun.
         </p>
         <p>
-          You can read my <Link to="/blog">blog</Link>, view my{' '}
-          <Link to="/guides">dev guides</Link>, or contact me at <b>hello</b> at{' '}
-          <b>taniarascia.com</b>.
+          Untuk ikut berkontribusi, Anda dapat mengirimkan artikel <b>konten@linuxer.or.id</b>.
+          {' '} Dan persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.{' '}
+          Cerdaskan Bangsa dengan Open Source bersama <b>Linuxer</b>.
         </p>
       </section>
       <Section title="Latest">
@@ -66,26 +64,17 @@ export default function BlogIndex({ data }) {
       <Section title="Popular">
         <Posts data={simplifiedPopular} tags />
       </Section>
-      <Section title="Projects">
-        <Projects data={projects} />
-      </Section>
-      <Section title="Interviews &amp; Podcasts" className="medium">
-        <Lists data={interviews} />
-      </Section>
-      <Section title="Speaking" className="medium">
-        <Lists data={speaking} />
-      </Section>
       <Section title="Newsletter" className="small">
         <p>
-          Every now and then I'll send out an email when I've created something
-          new. Never any spam, easy unsubscribe whenever.
+        Sesekali kami akan mengirimkan email, ketika kami membuat konten yang
+        baru. Tidak pernah ada spam, dan mudah untuk berhenti berlangganan kapan saja.
         </p>
         <a
-          href="https://taniarascia.substack.com/subscribe"
+          href="https://linuxer.substack.com/subscribe"
           target="_blank"
           rel="noreferrer"
         >
-          Subscribe to the email list
+          Berlangganan ke daftar email
         </a>
       </Section>
     </Layout>
