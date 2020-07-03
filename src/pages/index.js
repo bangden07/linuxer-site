@@ -37,7 +37,7 @@ export default function BlogIndex({ data }) {
       <section className="small lead">
         <h1>Halo, Saya Linuxer</h1>
         <p className="subtitle">
-          Linuxer merupakan media belajar online yang bersifat{' '}
+          Linuxer adalah media belajar online yang bersifat{' '}
           <a
             href="https://opensource.org/"
             target="_blank"
@@ -54,7 +54,7 @@ export default function BlogIndex({ data }) {
         </p>
         <p>
           Untuk ikut berkontribusi, Anda dapat mengirimkan artikel <b>konten@linuxer.or.id</b>.
-          {' '} Dan persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.{' '}
+          Dan persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.
           Cerdaskan Bangsa dengan Open Source bersama <b>Linuxer</b>.
         </p>
       </section>
