@@ -53,8 +53,9 @@ export default function BlogIndex({ data }) {
           Melainkan kami membuka lebar untuk para kontributor, siapapun.
         </p>
         <p>
-          Untuk ikut berkontribusi, Anda dapat mengirimkan artikel ke <b>konten@linuxer.or.id</b>.
-          Dan persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.</p>
+          Yuk berkontribusi dengan cara kirimkan artikel ke: <b>konten@linuxer.or.id</b>.
+          <br/>
+          Persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.</p>
           <p>Cerdaskan Bangsa dengan Open Source bersama <b>Linuxer</b>.
         </p>
       </section>
