@@ -11,9 +11,9 @@ export default function Footer() {
       <section className="flex">
         <nav className="footer-links">
           <Link to="/blog">Blog</Link>
-          <Link to="/guides">Guides</Link>
+          <Link to="/saya">About</Link>
           <a
-            href="https://taniarascia.substack.com/subscribe"
+            href="/mailing-list"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,18 +21,25 @@ export default function Footer() {
           </a>
           <Link to="/rss.xml">RSS feed</Link>
           <a
-            href="https://ko-fi.com/taniarascia"
+            href="https://ko-fi.com/linuxer"
             target="_blank"
             rel="noopener noreferrer"
           >
             Ko-fi
           </a>
           <a
-            href="https://patreon.com/taniarascia"
+            href="/disclaimer"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Patreon
+            Disclaimer
+          </a>
+          <a
+            href="/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
           </a>
         </nav>
         <nav className="flex">
@@ -46,7 +53,7 @@ export default function Footer() {
             <img src={gatsby} className="footer-img" alt="Gatsby" />
           </a>
           <a
-            href="https://github.com/taniarascia"
+            href="https://github.com/linuxer"
             title="Open-source on GitHub"
             target="_blank"
             rel="noopener noreferrer"
