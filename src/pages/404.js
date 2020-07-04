@@ -12,7 +12,7 @@ export default function FourOhFour() {
       <Helmet title={`404 | ${config.siteTitle}`} />
       <SEO />
         <center>
-          <img src="../images/404.png"></img>
+          <img src="../../content/images/404.png"></img>
         </center>
     </Layout>
   )
