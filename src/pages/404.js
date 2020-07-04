@@ -12,7 +12,9 @@ export default function FourOhFour() {
     <Layout>
       <Helmet title={`404 | ${config.siteTitle}`} />
       <SEO />
-          <img align="center" src={`${errornotfound}`} alt="404 Error Not Found"/>
+        <center>
+          <img src={`${errornotfound}`} alt="404 Error Not Found"/>
+        </center>
     </Layout>
   )
 }
