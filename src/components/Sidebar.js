@@ -18,12 +18,12 @@ export default function Sidebar({ post, ...props }) {
     <aside>
       <div className="aside-content">
       <section>
+      {thumbnail && <Img fixed={thumbnail.childImageSharp.fixed} />}
           <h3>Search</h3>
           <p>This search actually works, I promise.</p>
           <SearchForm {...props} />
         </section>
         <section>
-          {thumbnail && <Img fixed={thumbnail.childImageSharp.fixed} />}
           <h3>Published</h3>
           <time>{post.frontmatter.date}</time>
           <h3>Tags</h3>
