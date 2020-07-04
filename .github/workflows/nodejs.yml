@@ -14,10 +14,10 @@ jobs:
           node-version: 12.x
       - name: npm install, test and build
         run: |
-          yarn install
-          yarn lint
-          yarn test
-          yarn tsc
-          yarn run build
+          npm install
+          npm lint
+          npm test
+          npm tsc
+          npm run build
         env:
           CI: true
