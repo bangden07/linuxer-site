@@ -1,9 +1,8 @@
 git:
   submodules: false
 before_install:
-  - git submodule update --init --recursive
-  - echo -e "machine github.com\n  login ci-user\n  password $CI_USER_PASSWORD" >~/.netrc
-
+  - echo -e "machine github.com\n  login $GH_TOKEN" > ~/.netrc
+  - git clone https://github.com/bangden07/linuxer-content.git ${HOME}/content
 language: node_js
 before_script:
   - npm install -g gatsby
