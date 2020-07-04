@@ -5,4 +5,5 @@ export default {
   description:
     'Media belajar online dan tutorial lengkap tentang linux.',
   userTwitter: 'linuxer',
+  errornotfound: '../../content/thumbnails/404.png',
 }
