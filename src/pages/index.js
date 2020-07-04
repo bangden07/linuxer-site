@@ -60,10 +60,10 @@ export default function BlogIndex({ data, ...props  }) {
           <p>Cerdaskan Bangsa dengan Open Source bersama <b>Linuxer</b>.
         </p>
       </section>
-      <Section title="Latest">
+      <Section title="Terbaru">
         <Posts data={simplifiedLatest} tags />
       </Section>
-      <Section title="Popular">
+      <Section title="Populer">
         <Posts data={simplifiedPopular} tags />
       </Section>
       <Section title="Newsletter" className="small">
@@ -79,8 +79,8 @@ export default function BlogIndex({ data, ...props  }) {
           Berlangganan ke daftar email
         </a>
       </Section>
-      <Section title="Search" className="small">
-        <p>Search anything on the site.</p>
+      <Section title="Pencarian" className="small">
+        <p>Cari apa saja di situs ini.</p>
         <SearchForm {...props} />
       </Section>
     </Layout>

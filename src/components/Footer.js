@@ -14,7 +14,6 @@ export default function Footer() {
           <Link to="/saya">About</Link>
           <a
             href="/mailing-list"
-            target="_blank"
             rel="noopener noreferrer"
           >
             Email list
@@ -29,14 +28,12 @@ export default function Footer() {
           </a>
           <a
             href="/disclaimer"
-            target="_blank"
             rel="noopener noreferrer"
           >
             Disclaimer
           </a>
           <a
             href="/privacy-policy"
-            target="_blank"
             rel="noopener noreferrer"
           >
             Privacy Policy
