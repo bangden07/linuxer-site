@@ -1,13 +1,14 @@
-language: node_js
-before_script:
-  - npm install -g gatsby
-node_js:
-  - "12"
 git:
   submodules: false
 before_install:
   - echo -e "machine github.com\n  login ci-user\n  password $CI_USER_PASSWORD" >~/.netrc
   - git submodule update --init --recursive
+
+language: node_js
+before_script:
+  - npm install -g gatsby
+node_js:
+  - "12"
 deploy:
   provider: script
   script: cd docs/ && yarn install && yarn run deploy
