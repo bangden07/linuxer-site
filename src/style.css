@@ -1,4 +1,4 @@
-/*! Tania Rascia's website style. Written with plain CSS in one file. Why not? */
+/*! Linuxer */
 
 /* Global variables */
 
@@ -227,8 +227,9 @@ aside {
 }
 
 aside p,
-aside ul {
-  font-size: 0.95rem;
+aside ul,
+aside a {
+  font-size: 0.9rem;
 }
 
 aside ul {
@@ -236,7 +237,7 @@ aside ul {
 }
 
 aside h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 aside a.link:hover {
@@ -325,7 +326,7 @@ p.subtitle {
 a {
   color: var(--link-color);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a:hover {
@@ -742,6 +743,10 @@ tbody tr:nth-child(even) {
 
 /* Search */
 
+.search-form {
+  display: flex;
+}
+
 [type='search'] {
   display: block;
   padding: 0.8rem 1rem;
@@ -750,6 +755,30 @@ tbody tr:nth-child(even) {
   max-width: 400px;
   border-radius: 0.3rem;
   font-size: 1rem;
+  -webkit-appearance: none;
+}
+
+.search-form [type='search'] {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+button {
+  /* background: var(--link-color); */
+  /* color: white; */
+  font-weight: 500;
+  font-size: 1.3rem;
+  border: 2px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+
+button:hover {
+  background: #eee;
 }
 
 ::placeholder,
