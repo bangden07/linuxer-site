@@ -17,6 +17,11 @@ export default function Sidebar({ post, ...props }) {
   return (
     <aside>
       <div className="aside-content">
+      <section>
+          <h3>Search</h3>
+          <p>This search actually works, I promise.</p>
+          <SearchForm {...props} />
+        </section>
         <section>
           {thumbnail && <Img fixed={thumbnail.childImageSharp.fixed} />}
           <h3>Published</h3>
@@ -107,11 +112,6 @@ export default function Sidebar({ post, ...props }) {
               <img src={rss} alt="RSS" /> <span>RSS Feed</span>
             </Link>
           </nav>
-        </section>
-        <section>
-          <h3>Search</h3>
-          <p>This search actually works, I promise.</p>
-          <SearchForm {...props} />
         </section>
       </div>
     </aside>
