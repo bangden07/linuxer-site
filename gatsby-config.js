@@ -86,7 +86,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Tania Rascia | RSS Feed',
+            title: 'Linuxer | RSS Feed',
           },
         ],
       },
