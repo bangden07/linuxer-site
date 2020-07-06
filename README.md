@@ -9,7 +9,7 @@ Website Linuxer menggunakan Gatsby, React, dan Node.js
 ## Donasi
 
 Anda dapat berdonasi untuk perkembangan proyek situ ini di sini:
-[![Donasi](https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cac59d00ca8b5409de931cd_support3.gif)](https://ko-fi.com/linuxer)
+[![Donasi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B51W77O)
 
 ## License
 
