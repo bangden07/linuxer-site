@@ -74,14 +74,6 @@ export default function Sidebar({ post, ...props }) {
             >
               <img src={kofi} alt="Patreon" /> <span>Buy me a coffee</span>
             </a>
-            <a
-              href="https://patreon.com/linuxer"
-              target="_blank"
-              rel="noreferrer"
-              className="link patreon"
-            >
-              <img src={patreon} alt="Patreon" /> <span>Become a Patron</span>
-            </a>
           </nav>
         </section>
         <section>
