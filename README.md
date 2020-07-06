@@ -1,6 +1,6 @@
 # linuxer.or.id
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/d6d5e7e2-0506-4ad1-b592-d1b017ac7305/deploy-status)](https://app.netlify.com/sites/quizzical-panini-a01f79/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/d6d5e7e2-0506-4ad1-b592-d1b017ac7305/deploy-status)](https://app.netlify.com/sites/linuxer/deploys)
 
 Website Linuxer menggunakan Gatsby, React, dan Node.js
 
