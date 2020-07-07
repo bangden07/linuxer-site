@@ -90,7 +90,7 @@ export default function Sidebar({ post, ...props }) {
               className="link"
             >
               <img src={email} alt="Email" />
-              <span>Berlangganan ke daftar email</span>
+              <span>Email list</span>
             </a>
             <Link
               to="/rss.xml"

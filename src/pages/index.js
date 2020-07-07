@@ -16,7 +16,9 @@ import projects from '../data/projects'
 import interviews from '../data/interviews'
 import speaking from '../data/speaking'
 
-export default function BlogIndex({ data, ...props  }) {
+import linuxer from '../../content/images/linuxer.png'
+
+export default function BlogIndex({ data, ...props }) {
   const latest = data.latest.edges
   const popular = data.popular.edges
   const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest])
@@ -35,7 +37,8 @@ export default function BlogIndex({ data, ...props  }) {
     <Layout>
       <Helmet title={config.siteTitle} />
       <SEO />
-      <section className="small lead">
+      <section className="lead">
+        <div>
         <h1>Halo, Saya Linuxer</h1>
         <p className="subtitle">
           Linuxer adalah media belajar online yang bersifat{' '}
@@ -59,27 +62,32 @@ export default function BlogIndex({ data, ...props  }) {
           Persyaratan dapat di lihat di sini: <Link to="/kontributor">Kontributor</Link>.</p>
           <p>Cerdaskan Bangsa dengan Open Source bersama <b>Linuxer</b>.
         </p>
+        </div>
+        <div>
+          <img src={linuxer} alt="linuxer" />
+        </div>
       </section>
-      <Section title="Terbaru">
+      <Section title="Latest">
         <Posts data={simplifiedLatest} tags />
       </Section>
-      <Section title="Populer">
+      <Section title="Popular">
         <Posts data={simplifiedPopular} tags />
       </Section>
       <Section title="Newsletter" className="small">
         <p>
-        Sesekali kami akan mengirimkan email, ketika kami membuat konten yang
-        baru. Tidak pernah ada spam, dan mudah untuk berhenti berlangganan kapan saja.
+          Sesekali kami akan mengirimkan email, ketika kami membuat konten yang
+          baru. Tidak pernah ada spam, dan mudah untuk berhenti berlangganan kapan saja.
         </p>
         <a
           href="https://linuxer.substack.com/subscribe"
           target="_blank"
           rel="noreferrer"
+          className="button"
         >
           Berlangganan ke daftar email
         </a>
       </Section>
-      <Section title="Pencarian" className="small">
+      <Section title="Search" className="small">
         <p>Cari apa saja di situs ini.</p>
         <SearchForm {...props} />
       </Section>
