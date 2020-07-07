@@ -67,10 +67,10 @@ export default function BlogIndex({ data, ...props }) {
           <img src={linuxer} alt="linuxer" />
         </div>
       </section>
-      <Section title="Latest">
+      <Section title="Terbaru">
         <Posts data={simplifiedLatest} tags />
       </Section>
-      <Section title="Popular">
+      <Section title="Populer">
         <Posts data={simplifiedPopular} tags />
       </Section>
       <Section title="Newsletter" className="small">
@@ -87,7 +87,7 @@ export default function BlogIndex({ data, ...props }) {
           Berlangganan ke daftar email
         </a>
       </Section>
-      <Section title="Search" className="small">
+      <Section title="Pencarian" className="small">
         <p>Cari apa saja di situs ini.</p>
         <SearchForm {...props} />
       </Section>
