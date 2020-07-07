@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 
 import netlify from '../../content/thumbnails/netlify.png'
 import gatsby from '../../content/thumbnails/gatsby.png'
-import github from '../../content/thumbnails/github.png'
 
 export default function Footer() {
   return (
@@ -47,15 +46,6 @@ export default function Footer() {
             className="img"
           >
             <img src={gatsby} className="footer-img" alt="Gatsby" />
-          </a>
-          <a
-            href="https://github.com/linuxer"
-            title="Open-source on GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="img"
-          >
-            <img src={github} className="footer-img" alt="GitHub" />
           </a>
           <a
             href="https://www.netlify.com/"
