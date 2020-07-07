@@ -16,6 +16,5 @@
 	sitemapPath = "/sitemap.xml"
 	providers = [
 		"google",
-		"bing",
-    "yandex"
+		"bing"
 	]

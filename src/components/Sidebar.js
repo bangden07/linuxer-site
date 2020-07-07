@@ -1,24 +1,30 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
 
 import patreon from '../../content/thumbnails/patreon-light.png'
 import kofi from '../../content/thumbnails/kofi.png'
 import rss from '../../content/thumbnails/rss.png'
 import email from '../../content/images/email.png'
+import linuxer from '../../content/images/linuxer.png'
 
 import SearchForm from '../components/SearchForm'
 
 import { slugify } from '../utils/helpers'
 
 export default function Sidebar({ post, ...props }) {
-  const { tags, thumbnail } = post.frontmatter
+  const { tags } = post.frontmatter
 
   return (
     <aside>
       <div className="aside-content">
       <section>
-      {thumbnail && <Img fixed={thumbnail.childImageSharp.fixed} />}
+      <img src={linuxer} alt="Linuxer" className="avatar" />
+          <p>
+            Hai, saya Linuxer. Linuxer adalah media belajar online yang
+            dapat diakses oleh siapa saja yang ingin belajar tentang linux.
+            Linuxer adalah komunitas independent <i>Open Source</i>, siapa saja dapat
+            berkontribusi.
+          </p>
           <h3>Pencarian</h3>
           <SearchForm {...props} />
         </section>
@@ -40,13 +46,7 @@ export default function Sidebar({ post, ...props }) {
           </div>
         </section>
         <section>
-          <h3>Penerbit</h3>
-          <p>
-            Hai, saya Linuxer. Linuxer adalah media belajar online yang
-            dapat diakses oleh siapa saja yang ingin belajar tentang linux.
-            Linuxer adalah komunitas independent <i>Open Source</i>, siapa saja dapat
-            berkontribusi.
-          </p>
+          <h3>Support</h3>
           <p>
             Media ini saya bebaskan dari:
           </p>
@@ -60,7 +60,6 @@ export default function Sidebar({ post, ...props }) {
               <mark>No bullshit</mark>
             </li>
           </ul>
-          <h3>Support</h3>
           <p>
           Jika Anda menyukai apa yang saya lakukan dan ingin mendukung saya,
           Anda dapat melakukannya di bawah!
@@ -72,7 +71,7 @@ export default function Sidebar({ post, ...props }) {
               rel="noreferrer"
               className="link"
             >
-              <img src={kofi} alt="Patreon" /> <span>Buy me a coffee</span>
+              <img src={kofi} alt="kofi" /> <span>Buy me a coffee</span>
             </a>
           </nav>
         </section>
