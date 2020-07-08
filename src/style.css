@@ -1042,12 +1042,14 @@ a.tag-jQuery:hover {
 }
 
 a.tag-css,
+a.tag-golang,
 a.tag-dom,
 a.tag-architecture {
   background: #e7f5ff;
   color: #1971c2;
 }
 
+a.tag-css:hover,
 a.tag-css:hover,
 a.tag-dom:hover,
 a.tag-architecture:hover {
