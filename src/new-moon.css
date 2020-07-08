@@ -90,7 +90,7 @@ pre[class*='language-'] {
 pre.language-text,
 code.language-text {
   background: var(--light-background) !important;
-  color: #333 !important;
+  color: rgb(221, 28, 28) !important;
   box-shadow: none;
 }
 
@@ -107,6 +107,7 @@ pre.language-terminal {
   padding-top: 3rem;
   margin: 2rem 0;
   border-radius: 0.3rem;
+  border: 1px solid #c9cccf;
 }
 
 code.language-terminal {
