@@ -18,7 +18,7 @@ Linuxer
   --class: #e1a6f2;
   --tag: #6ab0f3;
   --error: #f2777a;
-  --light-background: #f1f3f5;
+  --light-background: #33e6bd;
 }
 
 pre[class*='language-'] {
@@ -87,7 +87,7 @@ pre[class*='language-'] {
 pre.language-text,
 code.language-text {
   background: var(--light-background) !important;
-  color: #333 !important;
+  color: #fff !important;
   box-shadow: none;
 }
 
