@@ -909,6 +909,13 @@ time,
   font-weight: 400;
 }
 
+.meta:hover {
+  color: #fff;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
 /* Tags */
 
 .count {
