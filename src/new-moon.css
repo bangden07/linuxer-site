@@ -3,7 +3,7 @@ Linuxer
 */
 :root {
   --code-font-family: Menlo, 'Roboto Mono', Courier New, monospace;
-  --code-font-color: #d4d4d4;
+  --code-font-color: #b3b9c5;
   --code-background-color: #1a3c46;
   --string: #92d192;
   --variable: #f2777a;
@@ -103,7 +103,7 @@ pre.language-terminal {
   box-shadow: 0 8px 16px rgba(100, 120, 130, 0.35);
   padding-top: 3rem;
   margin: 2rem 0;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   border: 1px solid #c9cccf;
 }
 

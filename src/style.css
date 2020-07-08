@@ -952,12 +952,14 @@ mark {
 }
 
 a.tag-javascript,
+a.tag-python,
 a.tag-sql {
   background: #fff3bf;
   color: black;
 }
 
 a.tag-javascript:hover,
+a.tag-python:hover,
 a.tag-sql:hover {
   background: #ffd43b;
   color: black;
@@ -965,6 +967,7 @@ a.tag-sql:hover {
 
 a.tag-linux,
 a.tag-git,
+a.tag-ubuntu,
 a.tag-snippets,
 a.tag-html {
   background: #fff4e6;
@@ -973,6 +976,7 @@ a.tag-html {
 
 a.tag-linux:hover,
 a.tag-git:hover,
+a.tag-ubuntu:hover,
 a.tag-snippets:hover,
 a.tag-html:hover {
   background: #fd7e14;
@@ -1053,6 +1057,7 @@ a.tag-architecture:hover {
 
 a.tag-php,
 a.tag-redux,
+a.tag-tutorial,
 a.tag-gatsby,
 a.tag-life {
   background: #f3f0ff;
@@ -1061,6 +1066,7 @@ a.tag-life {
 
 a.tag-php:hover,
 a.tag-redux:hover,
+a.tag-tutorial:hover,
 a.tag-gatsby:hover,
 a.tag-life:hover {
   background: #7950f2;
