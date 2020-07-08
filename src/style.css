@@ -1012,12 +1012,14 @@ a.tag-security:hover {
 }
 
 a.tag-node,
+a.tag-gulp,
 a.tag-automation {
   background: #fff5f5;
   color: #e03131;
 }
 
 a.tag-node:hover,
+a.tag-gulp:hover,
 a.tag-automation:hover {
   background: #f03e3e;
   color: white;
