@@ -45,7 +45,7 @@ export default function BlogIndex({ data, ...props }) {
               <Link to="/saya" className="name">
                 Linuxer
               </Link>
-              .<br /> ✍ Media belajar online & tutorial tentang linux.
+              .<br /> Media belajar online & tutorial tentang linux ✍
             </h1>
               <p>
                 Siapapun dapat ikut serta berkontribusi dengan cara membuat konten artikel
