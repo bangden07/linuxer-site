@@ -10,10 +10,10 @@ export default function Footer() {
     <footer className="footer container">
       <section className="flex">
         <nav className="footer-links">
-          <Link to="/blog">Blog</Link>
-          <Link to="/guides">Guides</Link>
+          <Link to="/privacy-policy">Privacy</Link>
+          <Link to="/disclaimer">Disclaimer</Link>
           <a
-            href="https://taniarascia.substack.com/subscribe"
+            href="https://linuxer.substack.com/subscribe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,18 +21,11 @@ export default function Footer() {
           </a>
           <Link to="/rss.xml">RSS feed</Link>
           <a
-            href="https://ko-fi.com/taniarascia"
+            href="https://ko-fi.com/linuxer"
             target="_blank"
             rel="noopener noreferrer"
           >
             Ko-fi
-          </a>
-          <a
-            href="https://patreon.com/taniarascia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Patreon
           </a>
         </nav>
         <nav className="flex">

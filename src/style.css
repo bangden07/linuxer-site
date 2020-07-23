@@ -358,8 +358,8 @@ aside section {
 }
 
 .aside-content {
-  border-radius: 0.3rem;
-  background: radial-gradient(var(--accent-color), var(--light-accent-color));
+  border-radius: 0.5rem;
+  background: var(--accent-color);
   padding: 1.5rem;
 }
 
