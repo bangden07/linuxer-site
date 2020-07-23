@@ -5,16 +5,14 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 
 import config from '../utils/config'
-import errornotfound from '../../content/thumbnails/404.png'
 
 export default function FourOhFour() {
   return (
     <Layout>
       <Helmet title={`404 | ${config.siteTitle}`} />
       <SEO />
-        <center>
-          <img src={`${errornotfound}`} alt="404 Error Not Found"/>
-        </center>
+      <h1>404</h1>
+      <p>This was probably a mistake.</p>
     </Layout>
   )
 }

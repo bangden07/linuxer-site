@@ -14,12 +14,18 @@ export default function PageTemplate({ data }) {
     <Layout>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
       <SEO />
-      <article>
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-        </header>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </article>
+      <header>
+        <div className="container">
+          <h1>
+            <u>{post.frontmatter.title}</u>
+          </h1>
+        </div>
+      </header>
+      <section>
+        <div className="container page">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+      </section>
     </Layout>
   )
 }

@@ -28,7 +28,7 @@ export default function Search({ posts, location, navigate }) {
       <input
         id="search"
         type="search"
-        placeholder="Cari semua posting..."
+        placeholder="Search everything..."
         value={query}
         onChange={(e) => {
           navigate(e.target.value ? `/blog/?search=${e.target.value}` : '')
@@ -40,7 +40,7 @@ export default function Search({ posts, location, navigate }) {
           results.length > 0 ? (
             <Posts data={results} tags />
           ) : (
-            <p>Maaf, tidak ada yang cocok dengan pencarian itu.</p>
+            <p>Sorry, nothing matched that search.</p>
           )
         ) : (
           <Posts data={posts} tags />

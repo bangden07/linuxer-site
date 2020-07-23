@@ -16,13 +16,21 @@ export default function BlogIndex({ data, ...props }) {
   return (
     <Layout>
       <Helmet title={`Blog | ${config.siteTitle}`} />
-      <SEO customDescription="Linux, Artikel, tutorial, informasi, teknologi, dan yang lainnya." />
+      <SEO customDescription="Articles, tutorials, snippets, musings, and everything else." />
+      <header>
+        <div className="container">
+          <h1>
+            <u>Writing</u>
+          </h1>
+          <p className="subtitle">
+            Articles, tutorials, snippets, musings, and everything else.
+          </p>
+        </div>
+      </header>
       <section>
-        <h1>Blog</h1>
-        <p className="subtitle">
-          Linux, Artikel, tutorial, informasi, teknologi, dan yang lainnya.
-        </p>
-        <Search posts={simplifiedPosts} {...props} />
+        <div className="container">
+          <Search posts={simplifiedPosts} {...props} />
+        </div>
       </section>
     </Layout>
   )

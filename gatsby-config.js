@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Linuxer - Linux User',
+    title: 'Tania Rascia',
     author: {
-      name: 'Linuxer',
+      name: 'Tania Rascia',
     },
     pathPrefix: '/',
-    siteUrl: 'https://www.linuxer.or.id',
+    siteUrl: 'https://www.taniarascia.com',
     description:
-      'Media belajar online dan tutorial lengkap tentang linux.',
-    feedUrl: 'https://www.linuxer.or.id/rss.xml',
-    logo: 'https://www.linuxer.or.id/logo.png',
+      'Software engineer and open source creator. This is my digital garden.',
+    feedUrl: 'https://www.taniarascia.com/rss.xml',
+    logo: 'https://www.taniarascia.com/logo.png',
   },
   plugins: [
     // ===================================================================================
@@ -21,10 +21,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Linuxer',
-        short_name: 'Linuxer',
+        name: 'Tania Rascia',
+        short_name: 'Tania Rascia',
         description:
-          'Media belajar online dan tutorial lengkap tentang linux.',
+          'Software engineer and open source creator. This is my digital garden.',
         start_url: '/',
         background_color: 'white',
         theme_color: '#5183f5',
@@ -86,23 +86,11 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Linuxer | RSS Feed',
+            title: 'Tania Rascia | RSS Feed',
           },
         ],
       },
     },
-
-    // ===================================================================================
-    // gzip & Sitemap
-    // ===================================================================================
-
-    {
-      resolve: 'gatsby-plugin-zopfli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg']
-      },
-    },
-    `gatsby-plugin-sitemap`,
 
     // ===================================================================================
     // Images and static

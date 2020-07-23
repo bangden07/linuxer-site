@@ -5,7 +5,7 @@ import patreon from '../../content/thumbnails/patreon-light.png'
 import kofi from '../../content/thumbnails/kofi.png'
 import rss from '../../content/thumbnails/rss.png'
 import email from '../../content/images/email.png'
-import linuxer from '../../content/images/linuxer.png'
+import tania from '../../content/images/tania-2020.png'
 
 import SearchForm from '../components/SearchForm'
 
@@ -17,20 +17,55 @@ export default function Sidebar({ post, ...props }) {
   return (
     <aside>
       <div className="aside-content">
-      <section>
-      <img src={linuxer} alt="Linuxer" className="avatar" />
+        <section>
+          <h3>Author</h3>
+          <img src={tania} className="avatar" alt="Me" />
           <p>
-            Hai, saya Linuxer. Linuxer adalah media belajar online yang
-            dapat diakses oleh siapa saja yang ingin belajar tentang linux.
-            Linuxer adalah komunitas independent <i>Open Source</i>, siapa saja dapat
-            berkontribusi.
+            I'm <Link to="/me">Tania</Link>, a software engineer and open-source
+            creator. This website is a compendium of things I've learned while
+            writing code for fun and profit.
           </p>
-          <h3>Pencarian</h3>
-          <SearchForm {...props} />
+          <nav>
+            <a
+              href="https://taniarascia.substack.com/subscribe"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <img src={email} alt="Email" />
+              <span>Newsletter signup</span>
+            </a>
+            <Link
+              to="/rss.xml"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <img src={rss} alt="RSS" /> <span>RSS Feed</span>
+            </Link>
+            <a
+              href="https://ko-fi.com/taniarascia"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <img src={kofi} alt="Patreon" /> <span>Buy me a coffee</span>
+            </a>
+            <a
+              href="https://patreon.com/taniarascia"
+              target="_blank"
+              rel="noreferrer"
+              className="link patreon"
+            >
+              <img src={patreon} alt="Patreon" /> <span>Become a Patron</span>
+            </a>
+          </nav>
         </section>
         <section>
-          <h3>Di Publikasi</h3>
+          <h3>Published</h3>
           <time>{post.frontmatter.date}</time>
+        </section>
+        <section>
           <h3>Tags</h3>
           <div className="cell tags">
             {tags &&
@@ -45,61 +80,11 @@ export default function Sidebar({ post, ...props }) {
               ))}
           </div>
         </section>
+
         <section>
-          <h3>Support</h3>
-          <p>
-            Media ini saya bebaskan dari:
-          </p>
-          <ul>
-            <li>Tidak ada ads</li>
-            <li>Tidak ada social media</li>
-            <li>Tidak ada tracking/analytics</li>
-            <li>Tidak ada paywall</li>
-            <li>Tidak ada third-party scripts</li>
-            <li>
-              <mark>No bullshit</mark>
-            </li>
-          </ul>
-          <p>
-          Jika Anda menyukai apa yang saya lakukan dan ingin mendukung saya,
-          Anda dapat melakukannya di bawah!
-          </p>
-          <nav>
-            <a
-              href="https://ko-fi.com/linuxer"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              <img src={kofi} alt="kofi" /> <span>Buy me a coffee</span>
-            </a>
-          </nav>
-        </section>
-        <section>
-          <h3>Tetap berhubungan</h3>
-          <p>
-            Sesekali saya akan mengirim email ketika saya sudah membuat
-            sesuatu yang baru. Tidak ada spam, dapat berhenti berlangganan kapan saja atau ikuti di RSS.
-          </p>
-          <nav>
-            <a
-              href="https://linuxer.substack.com/subscribe"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              <img src={email} alt="Email" />
-              <span>Email list</span>
-            </a>
-            <Link
-              to="/rss.xml"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              <img src={rss} alt="RSS" /> <span>RSS Feed</span>
-            </Link>
-          </nav>
+          <h3>Search</h3>
+          <p>Search anything on the site.</p>
+          <SearchForm {...props} />
         </section>
       </div>
     </aside>

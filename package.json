@@ -1,9 +1,9 @@
 {
-  "name": "linuxer.or.id",
+  "name": "taniarascia.com",
   "private": true,
-  "version": "3.1.0",
-  "description": "Media belajar online dan tutorial lengkap tentang linux.",
-  "author": "Linuxer",
+  "version": "3.0.0",
+  "description": "Personal website running on Gatsby, React, and Node.js.",
+  "author": "Tania Rascia",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -21,8 +21,6 @@
     "gatsby-plugin-netlify": "^2.3.7",
     "gatsby-plugin-react-helmet": "^3.3.5",
     "gatsby-plugin-sharp": "^2.6.13",
-    "gatsby-plugin-sitemap": "^2.4.10",
-    "gatsby-plugin-zopfli": "^1.3.2",
     "gatsby-remark-autolink-headers": "^2.3.10",
     "gatsby-remark-images": "^3.3.12",
     "gatsby-remark-prismjs": "^3.5.5",
@@ -44,6 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bangden07/linuxer-site"
+    "url": "https://github.com/taniarascia/taniarascia.com"
   }
 }

@@ -16,7 +16,7 @@ export default function SearchForm({ posts, location, navigate }) {
       <input
         id="search"
         type="search"
-        placeholder="Cari semua posting..."
+        placeholder="Try me..."
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)

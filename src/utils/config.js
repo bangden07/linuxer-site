@@ -1,9 +1,8 @@
 export default {
-  siteTitle: 'Linuxer - Linux User',
-  siteUrl: 'https://www.linuxer.or.id',
+  siteTitle: 'Tania Rascia',
+  siteUrl: 'https://www.taniarascia.com',
   siteLogo: '/logo.png',
   description:
-    'Media belajar online dan tutorial lengkap tentang linux.',
-  userTwitter: 'linuxer',
-  errornotfound: '../../content/thumbnails/404.png',
+    'Software engineer and open source creator. This is my digital garden.',
+  userTwitter: 'taniarascia',
 }
