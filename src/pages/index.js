@@ -63,20 +63,11 @@ export default function BlogIndex({ data, ...props }) {
         </div>
       </section>
       <div className="container">
-        <Section title="Latest">
+        <Section title="Terbaru">
           <Posts data={simplifiedLatest} tags />
         </Section>
-        <Section title="Popular">
+        <Section title="Populer">
           <Posts data={simplifiedPopular} tags />
-        </Section>
-        <Section title="Projects">
-          <Projects data={projects} />
-        </Section>
-        <Section title="Interviews &amp; Podcasts" className="medium">
-          <Lists data={interviews} />
-        </Section>
-        <Section title="Speaking" className="medium">
-          <Lists data={speaking} />
         </Section>
         <Section title="Newsletter" className="small">
           <p>
@@ -84,7 +75,7 @@ export default function BlogIndex({ data, ...props }) {
             easy unsubscribe whenever. Keep in touch!
           </p>
           <a
-            href="https://taniarascia.substack.com/subscribe"
+            href="https://linuxer.substack.com/subscribe"
             target="_blank"
             rel="noreferrer"
             className="button"
@@ -92,8 +83,8 @@ export default function BlogIndex({ data, ...props }) {
             Subscribe to the Email list
           </a>
         </Section>
-        <Section title="Search" className="small">
-          <p>Search anything in the blog.</p>
+        <Section title="Cari" className="small">
+          <p>Cari apapun di web ini.</p>
           <SearchForm {...props} />
         </Section>
       </div>
