@@ -16,7 +16,7 @@ import projects from '../data/projects'
 import interviews from '../data/interviews'
 import speaking from '../data/speaking'
 
-import linuxer from '../../content/thumbnails/linuxer-200.png'
+import linuxer from '../../content/thumbnails/logolinuxer-min.png'
 
 export default function BlogIndex({ data, ...props }) {
   const latest = data.latest.edges
@@ -45,15 +45,15 @@ export default function BlogIndex({ data, ...props }) {
               <Link to="/me" className="name">
                 Linuxer
               </Link>
-              .<br /> I'm a software engineer and open-source creator.
+              .<br /> Media belajar online dan tutorial lengkap tentang linux.
             </h1>
               <p>
-                This website is my digital garden&mdash;a compendium of the
-                things I have learned and created over the years, and anything
-                else I want to write about. You can read my{' '}
-                <Link to="/blog">blog</Link>, view my{' '}
-                <Link to="/guides">guides &amp; tutorials</Link>, or learn more{' '}
-                <Link to="/me">about me</Link>.
+                Siapapun dapat ikut serta berkontribusi dengan cara membuat konten artikel
+                yang berhubungan dengan Linux dan bersifat tutorial dan/atau informasi.
+                Anda dapat membaca semua artikel{' '}
+                <Link to="/blog">di sini</Link>, dan melihat{' '}
+                <Link to="/guides">tutorial dan panduan</Link>, atau ingin{' '}
+                <Link to="/saya">mengetahui aku</Link>.
               </p>
           </div>
 
