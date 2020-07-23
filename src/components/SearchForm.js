@@ -16,7 +16,7 @@ export default function SearchForm({ posts, location, navigate }) {
       <input
         id="search"
         type="search"
-        placeholder="Try me..."
+        placeholder="Cari..."
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)

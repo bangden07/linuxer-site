@@ -5,7 +5,7 @@ import patreon from '../../content/thumbnails/patreon-light.png'
 import kofi from '../../content/thumbnails/kofi.png'
 import rss from '../../content/thumbnails/rss.png'
 import email from '../../content/images/email.png'
-import tania from '../../content/images/tania-2020.png'
+import linuxer from '../../content/thumbnails/linuxer-200.png'
 
 import SearchForm from '../components/SearchForm'
 
@@ -19,15 +19,15 @@ export default function Sidebar({ post, ...props }) {
       <div className="aside-content">
         <section>
           <h3>Author</h3>
-          <img src={tania} className="avatar" alt="Me" />
+          <img src={linuxer} className="avatar" alt="Linuxer" />
           <p>
-            I'm <Link to="/me">Tania</Link>, a software engineer and open-source
+            I'm <Link to="/me">Linuxer</Link>, a software engineer and open-source
             creator. This website is a compendium of things I've learned while
             writing code for fun and profit.
           </p>
           <nav>
             <a
-              href="https://taniarascia.substack.com/subscribe"
+              href="https://linuxer.substack.com/subscribe"
               target="_blank"
               rel="noreferrer"
               className="link"
@@ -44,20 +44,12 @@ export default function Sidebar({ post, ...props }) {
               <img src={rss} alt="RSS" /> <span>RSS Feed</span>
             </Link>
             <a
-              href="https://ko-fi.com/taniarascia"
+              href="https://ko-fi.com/linuxer"
               target="_blank"
               rel="noreferrer"
               className="link"
             >
               <img src={kofi} alt="Patreon" /> <span>Buy me a coffee</span>
-            </a>
-            <a
-              href="https://patreon.com/taniarascia"
-              target="_blank"
-              rel="noreferrer"
-              className="link patreon"
-            >
-              <img src={patreon} alt="Patreon" /> <span>Become a Patron</span>
             </a>
           </nav>
         </section>
@@ -82,8 +74,8 @@ export default function Sidebar({ post, ...props }) {
         </section>
 
         <section>
-          <h3>Search</h3>
-          <p>Search anything on the site.</p>
+          <h3>Cari</h3>
+          <p>Cari apa saja di situs ini.</p>
           <SearchForm {...props} />
         </section>
       </div>
