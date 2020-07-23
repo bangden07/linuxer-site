@@ -42,10 +42,10 @@ export default function BlogIndex({ data, ...props }) {
           <div className="copy">
             <h1>
                 Halo, Saya{' '}
-              <Link to="/me" className="name">
+              <Link to="/saya" className="name">
                 Linuxer
               </Link>
-              .<br /> Media belajar online dan tutorial lengkap tentang linux.
+              .<br /> Media belajar online dan tutorial tentang linux.
             </h1>
               <p>
                 Siapapun dapat ikut serta berkontribusi dengan cara membuat konten artikel
