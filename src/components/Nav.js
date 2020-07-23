@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../../content/thumbnails/linuxer-200.png'
-
 export default function Nav() {
   return (
     <nav className="navbar">
@@ -10,7 +8,7 @@ export default function Nav() {
         <div className="flex">
           <div>
             <Link to="/" className="brand">
-              <img src={logo} className="footer-img" alt="logo" />
+              <span className="emoji">🐧</span> Linuxer
             </Link>
           </div>
           <div>

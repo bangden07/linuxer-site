@@ -16,7 +16,7 @@ import projects from '../data/projects'
 import interviews from '../data/interviews'
 import speaking from '../data/speaking'
 
-import tania from '../../content/images/tania-2020.png'
+import linuxer from '../../content/thumbnails/linuxer-200.png'
 
 export default function BlogIndex({ data, ...props }) {
   const latest = data.latest.edges
@@ -41,9 +41,9 @@ export default function BlogIndex({ data, ...props }) {
         <div className="container">
           <div className="copy">
             <h1>
-              Hey! I'm{' '}
+                Halo, Saya{' '}
               <Link to="/me" className="name">
-                Tania Rascia
+                Linuxer
               </Link>
               .<br /> I'm a software engineer and open-source creator.
             </h1>
@@ -58,7 +58,7 @@ export default function BlogIndex({ data, ...props }) {
           </div>
 
           <div className="image">
-            <img src={tania} alt="Tania" />
+            <img src={linuxer} alt="Linuxer" />
           </div>
         </div>
       </section>

@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tania Rascia',
+    title: 'Linuxer - Linux User',
     author: {
-      name: 'Tania Rascia',
+      name: 'Linuxer',
     },
     pathPrefix: '/',
-    siteUrl: 'https://www.taniarascia.com',
+    siteUrl: 'https://www.linuxer.or.id',
     description:
-      'Software engineer and open source creator. This is my digital garden.',
-    feedUrl: 'https://www.taniarascia.com/rss.xml',
-    logo: 'https://www.taniarascia.com/logo.png',
+      'Media belajar online dan tutorial lengkap tentang linux.',
+    feedUrl: 'https://www.linuxer.or.id/rss.xml',
+    logo: 'https://www.linuxer.or.id/logo.png',
   },
   plugins: [
     // ===================================================================================
@@ -21,13 +21,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Tania Rascia',
-        short_name: 'Tania Rascia',
+        name: 'Linuxer',
+        short_name: 'Linuxer',
         description:
-          'Software engineer and open source creator. This is my digital garden.',
+          'Media belajar online dan tutorial lengkap tentang linux.',
         start_url: '/',
         background_color: 'white',
-        theme_color: '#5183f5',
+        theme_color: '#dd4814',
         display: 'minimal-ui',
         icon: `static/logo.png`,
       },
