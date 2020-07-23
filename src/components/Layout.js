@@ -6,7 +6,7 @@ import favicon from '../../content/thumbnails/favicon.png'
 import Nav from './Nav'
 import Footer from './Footer'
 
-import '../style.css'
+import '../style.min.css'
 import '../new-moon.css'
 
 export default function Layout({ children }) {

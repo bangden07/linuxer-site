@@ -530,14 +530,14 @@ p.subtitle {
 
 a {
   color: var(--dark-font-color);
-  background: linear-gradient(transparent 70%, #dbe4ff 0);
+  background: linear-gradient(transparent 60%, #8bfbff 0);
   text-decoration: none;
   font-weight: 700;
 }
 
 a:hover {
   color: var(--dark-font-color);
-  background: linear-gradient(transparent 70%, #bac8ff 0);
+  background: linear-gradient(transparent 60%, #49f9ff 0);
 }
 
 .anchor.before {

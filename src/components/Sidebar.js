@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import patreon from '../../content/thumbnails/patreon-light.png'
 import kofi from '../../content/thumbnails/kofi.png'
 import rss from '../../content/thumbnails/rss.png'
 import email from '../../content/images/email.png'
