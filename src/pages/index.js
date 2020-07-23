@@ -71,8 +71,8 @@ export default function BlogIndex({ data, ...props }) {
         </Section>
         <Section title="Newsletter" className="small">
           <p>
-            I sent out an email when I've created something new. Never any spam,
-            easy unsubscribe whenever. Keep in touch!
+            Sesekali kami akan mengirimkan email, ketika kami membuat konten yang
+            baru. Tidak pernah ada spam, dan mudah untuk berhenti berlangganan kapan saja.
           </p>
           <a
             href="https://linuxer.substack.com/subscribe"
@@ -80,7 +80,7 @@ export default function BlogIndex({ data, ...props }) {
             rel="noreferrer"
             className="button"
           >
-            Subscribe to the Email list
+            Berlangganan ke daftar email
           </a>
         </Section>
         <Section title="Cari" className="small">

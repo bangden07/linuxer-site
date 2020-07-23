@@ -1,17 +1,16 @@
-/*! Tania Rascia's website style. Written with plain CSS in one file. Why not? */
-
 /* Global variables */
 
 :root {
   --font-color: #495057;
   --heading-color: #343a40;
   --dark-font-color: #1b1d25;
+  --nav-bar-warna: #FFC312;
   --medium-font-color: #60656c;
   --light-font-color: #868e96;
   --light-background: #f1f3f5;
   --border: #d6d9de;
-  --link-color: #5c7cfa;
-  --accent-color: #fadb6b;
+  --link-color: #00fae5;
+  --accent-color: #FFC312;
   --light-accent-color: #fcebb0;
 }
 
@@ -573,7 +572,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--dark-font-color);
+  background: var(--nav-bar-warna);
   box-shadow: 0 3px 13px rgba(100, 110, 140, 0.1),
     0 2px 4px rgba(100, 110, 140, 0.15);
   z-index: 2;
@@ -1100,8 +1099,8 @@ button:hover {
 }
 
 .button:hover {
-  border: 2px solid #364fc7;
-  background: #364fc7;
+  border: 2px solid #00c8fa;
+  background: #00c8fa;
   color: white;
 }
 
@@ -1210,12 +1209,14 @@ mark {
 }
 
 a.tag-javascript,
+a.tag-python,
 a.tag-sql {
   background: #fff3bf;
   color: black;
 }
 
 a.tag-javascript:hover,
+a.tag-python:hover,
 a.tag-sql:hover {
   background: #ffd43b;
   color: black;
@@ -1223,6 +1224,7 @@ a.tag-sql:hover {
 
 a.tag-linux,
 a.tag-git,
+a.tag-ubuntu,
 a.tag-snippets,
 a.tag-html {
   background: #fff4e6;
@@ -1231,9 +1233,10 @@ a.tag-html {
 
 a.tag-linux:hover,
 a.tag-git:hover,
+a.tag-ubuntu:hover,
 a.tag-snippets:hover,
 a.tag-html:hover {
-  background: #fd7e14;
+  background: #e8590c;
   color: white;
 }
 
@@ -1266,12 +1269,14 @@ a.tag-security:hover {
 }
 
 a.tag-node,
+a.tag-gulp,
 a.tag-automation {
   background: #fff5f5;
   color: #e03131;
 }
 
 a.tag-node:hover,
+a.tag-gulp:hover,
 a.tag-automation:hover {
   background: #f03e3e;
   color: white;
@@ -1279,6 +1284,7 @@ a.tag-automation:hover {
 
 a.tag-wordpress,
 a.tag-projects,
+a.tag-golang,
 a.tag-reference,
 a.tag-notes,
 a.tag-jQuery {
@@ -1288,6 +1294,7 @@ a.tag-jQuery {
 
 a.tag-wordpress:hover,
 a.tag-projects:hover,
+a.tag-golang:hover,
 a.tag-reference:hover,
 a.tag-notes:hover,
 a.tag-jQuery:hover {
@@ -1311,6 +1318,7 @@ a.tag-architecture:hover {
 
 a.tag-php,
 a.tag-redux,
+a.tag-centos,
 a.tag-gatsby,
 a.tag-life {
   background: #f3f0ff;
@@ -1319,6 +1327,7 @@ a.tag-life {
 
 a.tag-php:hover,
 a.tag-redux:hover,
+a.tag-centos:hover,
 a.tag-gatsby:hover,
 a.tag-life:hover {
   background: #7950f2;

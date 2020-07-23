@@ -13,8 +13,8 @@ export default function Nav() {
           </div>
           <div>
             <Link to="/blog">Blog</Link>
-            <Link to="/guides">Guides</Link>
-            <Link to="/me">About</Link>
+            <Link to="/guides">Panduan</Link>
+            <Link to="/saya">About</Link>
           </div>
         </div>
       </div>

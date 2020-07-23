@@ -53,11 +53,11 @@ export default function Sidebar({ post, ...props }) {
           </nav>
         </section>
         <section>
-          <h3>Published</h3>
+          <h3>Diterbitkan</h3>
           <time>{post.frontmatter.date}</time>
         </section>
         <section>
-          <h3>Tags</h3>
+          <h3>#Tags</h3>
           <div className="cell tags">
             {tags &&
               tags.map((tag) => (
