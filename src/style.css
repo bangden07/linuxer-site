@@ -52,8 +52,8 @@ section > h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  background: linear-gradient(transparent 80%, var(--accent-color) 0);
-  padding: 0.4rem 0;
+  background: linear-gradient(transparent 60%, var(--accent-color) 0);
+  padding: .0rem 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -360,7 +360,7 @@ aside section {
 .aside-content {
   border-radius: 0.5rem;
   background: var(--accent-color);
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .aside-content section:first-child {

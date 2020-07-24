@@ -27,7 +27,7 @@ module.exports = {
           'Media belajar online dan tutorial lengkap tentang linux.',
         start_url: '/',
         background_color: 'white',
-        theme_color: '#fadb6b',
+        theme_color: '#ffc312',
         display: 'minimal-ui',
         icon: `static/logo.png`,
       },
