@@ -20,9 +20,7 @@ export default function Sidebar({ post, ...props }) {
           <h3>Author</h3>
           <img src={linuxer} className="avatar" alt="Linuxer" />
           <p>
-            I'm <Link to="/me">Linuxer</Link>, a software engineer and open-source
-            creator. This website is a compendium of things I've learned while
-            writing code for fun and profit.
+            I'm <Link to="/me">Linuxer</Link>, Media belajar online.
           </p>
           <nav>
             <a
