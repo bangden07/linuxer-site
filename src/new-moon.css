@@ -1,8 +1,4 @@
-/*
- New Moon Theme by Tania Rascia
- https://taniarascia.github.io/new-moon
- Source: https://github.com/taniarascia/new-moon
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
 :root {
   --code-font-family: Menlo, 'Roboto Mono', Courier New, monospace;
