@@ -35,7 +35,7 @@
     "react-use-flexsearch": "^0.1.1"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-react-app": "^5.2.1",
     "gatsby-plugin-manifest": "^2.4.21",
     "prettier": "2.0.5"
