@@ -20,10 +20,10 @@ export default function BlogIndex({ data, ...props }) {
       <header>
         <div className="container">
           <h1>
-            <u>Writing</u>
+            <u>Artikel</u>
           </h1>
           <p className="subtitle">
-            Articles, tutorials, snippets, musings, and everything else.
+            Informasi, tutorial, dan curhatan.
           </p>
         </div>
       </header>

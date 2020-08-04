@@ -12,9 +12,9 @@ export default function Nav() {
             </Link>
           </div>
           <div>
-            <Link to="/blog">Blog</Link>
-            <Link to="/guides">Panduan</Link>
-            <Link to="/saya">About</Link>
+            <Link to="/blog">📝 Blog</Link>
+            <Link to="/guides">📘 Panduan</Link>
+            <Link to="/saya">♥ Tentang</Link>
           </div>
         </div>
       </div>

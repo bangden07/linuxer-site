@@ -23,10 +23,10 @@ export default function BlogIndex({ data }) {
       <header>
         <div className="container">
           <h1>
-            <u>Guides</u>
+            <u>Panduan</u>
           </h1>
           <p className="subtitle">
-            The missing instruction manuals of the web.
+            Panduan dasar untuk memulai sebuah langkah.
           </p>
         </div>
       </header>
