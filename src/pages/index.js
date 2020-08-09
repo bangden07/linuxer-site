@@ -75,10 +75,6 @@ export default function BlogIndex({ data, ...props }) {
             Berlangganan ke daftar email
           </a>
         </Section>
-        <Section title="Cari" className="small">
-          <p>Cari apapun di web ini.</p>
-          <SearchForm {...props} />
-        </Section>
       </div>
     </Layout>
   )
