@@ -26,6 +26,7 @@ export default function Search({ posts, location, navigate }) {
   return (
     <>
       <input
+        style={{ margin: '0 auto' }}
         id="search"
         type="search"
         placeholder="Cari apa saja..."
