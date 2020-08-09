@@ -4,18 +4,10 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
-import Lists from '../components/Lists'
-import Projects from '../components/Projects'
 import SEO from '../components/SEO'
-import SearchForm from '../components/SearchForm'
 
 import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
-
-import projects from '../data/projects'
-import interviews from '../data/interviews'
-import speaking from '../data/speaking'
-
 import linuxer from '../../content/thumbnails/logolinuxer-min.png'
 
 export default function BlogIndex({ data, ...props }) {

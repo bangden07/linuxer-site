@@ -1,12 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import kofi from '../../content/thumbnails/kofi.png'
-import rss from '../../content/thumbnails/rss.png'
-import email from '../../content/images/email.png'
-import linuxer from '../../content/thumbnails/linuxer-200.png'
-
 import SearchForm from '../components/SearchForm'
+import linuxer from '../../content/thumbnails/linuxer-200.png'
 
 import { slugify } from '../utils/helpers'
 
@@ -17,8 +13,7 @@ export default function Sidebar({ post, ...props }) {
     <aside>
       <div className="aside-content">
         <section>
-          <h3>Author</h3>
-          <img src={linuxer} className="avatar" alt="Linuxer" />
+          <img src={linuxer} alt="Linuxer" className="avatar" />
           <p>
             I'm <Link to="/me">Linuxer</Link>, Media belajar online.
           </p>
@@ -29,8 +24,7 @@ export default function Sidebar({ post, ...props }) {
               rel="noreferrer"
               className="link"
             >
-              <img src={email} alt="Email" />
-              <span>Newsletter signup</span>
+              Join Newsletter
             </a>
             <Link
               to="/rss.xml"
@@ -38,7 +32,7 @@ export default function Sidebar({ post, ...props }) {
               rel="noreferrer"
               className="link"
             >
-              <img src={rss} alt="RSS" /> <span>RSS Feed</span>
+              RSS Feed
             </Link>
             <a
               href="https://ko-fi.com/linuxer"
@@ -46,13 +40,9 @@ export default function Sidebar({ post, ...props }) {
               rel="noreferrer"
               className="link"
             >
-              <img src={kofi} alt="Patreon" /> <span>Buy me a coffee</span>
+              Buy me a Coffee
             </a>
           </nav>
-        </section>
-        <section>
-          <h3>Diterbitkan</h3>
-          <time>{post.frontmatter.date}</time>
         </section>
         <section>
           <h3>#Tags</h3>
@@ -69,7 +59,10 @@ export default function Sidebar({ post, ...props }) {
               ))}
           </div>
         </section>
-
+        <section>
+          <h3>Diterbitkan</h3>
+          <time>{post.frontmatter.date}</time>
+        </section>
         <section>
           <h3>Cari</h3>
           <p>Cari apa saja di situs ini.</p>

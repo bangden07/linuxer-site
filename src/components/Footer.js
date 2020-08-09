@@ -7,8 +7,8 @@ import github from '../../content/thumbnails/github.png'
 
 export default function Footer() {
   return (
-    <footer className="footer container">
-      <section className="flex">
+    <footer className="footer flex">
+      <section className="container">
         <nav className="footer-links">
           <Link to="/privacy-policy">Privacy</Link>
           <Link to="/disclaimer">Disclaimer</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
             Ko-fi
           </a>
         </nav>
-        <nav className="flex">
+        <nav className="flex justify-center">
           Built with <a
             href="https://www.gatsbyjs.org/"
             title="Built with Gatsby"
