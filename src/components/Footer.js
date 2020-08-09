@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
         </nav>
         <nav className="flex justify-center">
-          Built with <a
+          <a
             href="https://www.gatsbyjs.org/"
             title="Built with Gatsby"
             target="_blank"

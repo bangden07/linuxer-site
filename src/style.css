@@ -35,7 +35,7 @@ section {
 section > h2 {
   display: inline-block;
   font-size: 1.8rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   background: linear-gradient(transparent 80%, var(--accent-color) 0);
   padding: 0.4rem 0;
@@ -46,12 +46,11 @@ section > h2 {
   }
   section > h2 {
       font-size: 2.2rem;
-      margin-top: 4rem;
-      margin-bottom: 2rem;
+      margin: 0 0 2rem;
   }
 }
 .container {
-  max-width: 1200px;
+  max-width: 1160px;
   padding: 0 1.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +138,6 @@ blockquote.quotation p {
   margin: 0 0 2rem;
 }
 blockquote.pull-quote {
-  display: none;
   margin: 1.5rem 0;
   padding: 2rem;
   background: var(--light-accent-color);
@@ -168,16 +166,15 @@ blockquote.pull-quote a:hover {
 }
 @media screen and (min-width: 800px) {
   blockquote.pull-quote {
-      display: block;
-      margin: 1.5rem 2.5rem;
-      padding: 2rem;
-      max-width: 400px;
-      float: right;
+    margin: 1.5rem 2.5rem;
+    padding: 2rem;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 800px) {
   blockquote.quotation {
-      padding-bottom: 2rem;
+    margin: 2.5rem 0;
+    overflow: auto;
   }
   blockquote.quotation cite {
       float: right;
@@ -252,7 +249,7 @@ h5 {
   }
 }
 aside {
-  min-width: 310px;
+  min-width: 270px;
 }
 aside p,
 aside ul,
@@ -264,34 +261,21 @@ aside ul {
 }
 aside h3 {
   margin-top: 0.5rem;
-  margin-bottom: 1.25rem;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.1rem;
+  color: var(--dark-font-color);
+  border-bottom: 2px solid var(--light-background);
 }
 aside p a {
   color: var(--dark-font-color);
   background: linear-gradient(transparent 70%, var(--accent-color) 0) !important;
 }
-aside a.link {
-  background: #fff;
-}
-aside a.link:hover {
-  color: var(--dark-font-color);
-  background: var(--light-background);
-}
 aside section {
-  padding: 1.5rem;
-  border-radius: 0.3rem;
-  box-shadow: 0 3px 13px rgba(100, 110, 140, 0.1), 0 2px 4px rgba(100, 110, 140, 0.15);
-  margin: 1.5rem 0;
-  background: #fff;
-}
-.aside-content {
-  border-radius: 0.3rem;
-  background: radial-gradient(var(--accent-color), var(--light-accent-color));
-  padding: 1.5rem;
+  margin: 3.5rem 0;
+  background:white;
 }
 .aside-content section:first-child {
-  padding-top: 0.5rem;
   margin-top: 0;
 }
 .aside-content section:last-child {
@@ -304,13 +288,12 @@ aside section {
   margin: 0 auto 1rem;
 }
 a.link {
-  display: grid;
-  grid-template-columns: 45px auto;
-  align-items: center;
-  color: var(--heading-color);
-  border-bottom: none;
-  padding: 0.75rem;
+  display: block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem 0;
+  background: var(--light-background);
   border-radius: 0.3rem;
+  font-weight: 400;
 }
 a.link:hover {
   border-bottom: none;
