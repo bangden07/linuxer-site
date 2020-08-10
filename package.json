@@ -45,6 +45,6 @@
     "url": "https://github.com/bangden07/linuxer-site"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/bangden07" 
+    "registry": "https://npm.pkg.github.com/" 
   }
 }
