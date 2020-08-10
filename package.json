@@ -5,6 +5,7 @@
   "description": "Media belajar online dan tutorial lengkap tentang linux.",
   "author": "Linuxer",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
