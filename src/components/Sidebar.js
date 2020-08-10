@@ -44,11 +44,11 @@ export default function Sidebar({ post, ...props }) {
         <section>
           <h3>Komentar</h3>
           <a href="#comments" className="link">
-            Lihat semua komentar
+            Lihat semua diskusi seru
           </a>
         </section>
         <section>
-          <h3>Tetap terhubung dengan kami di</h3>
+          <h3>Tetap terhubung dengan kami</h3>
           <nav>
             <a
               href="https://linuxer.substack.com/subscribe"
