@@ -1,6 +1,6 @@
 {
   "name": "bangden07",
-  "private": false,
+  "private": true,
   "version": "3.2.0",
   "description": "Media belajar online dan tutorial lengkap tentang linux.",
   "author": "Linuxer",
@@ -43,8 +43,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/bangden07/linuxer-site"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/" 
   }
 }
