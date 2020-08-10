@@ -11,10 +11,16 @@ export default function Nav() {
               <span className="emoji">🐧</span> Linuxer
             </Link>
           </div>
-          <div>
-            <Link to="/blog">Blog</Link>
-            <Link to="/guides">Panduan</Link>
-            <Link to="/saya">Tentang</Link>
+          <div className="flex">
+            <Link to="/me">
+              <span className="emoji">❤️</span> Tentang
+            </Link>
+            <Link to="/blog">
+              <span className="emoji">📝</span> Blog
+            </Link>
+            <Link to="/guides">
+              <span className="emoji">📘</span> Panduan
+            </Link>
           </div>
         </div>
       </div>

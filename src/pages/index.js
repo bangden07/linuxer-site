@@ -56,24 +56,10 @@ export default function BlogIndex({ data, ...props }) {
       </section>
       <div className="container">
         <Section title="Terbaru">
-          <Posts data={simplifiedLatest} tags />
+          <Posts data={simplifiedLatest} tags includeDate />
         </Section>
         <Section title="Populer">
           <Posts data={simplifiedPopular} tags />
-        </Section>
-        <Section title="Newsletter" className="small">
-          <p>
-            Sesekali kami akan mengirimkan email, ketika kami membuat konten yang
-            baru. Tidak pernah ada spam, dan mudah untuk berhenti berlangganan kapan saja.
-          </p>
-          <a
-            href="https://linuxer.substack.com/subscribe"
-            target="_blank"
-            rel="noreferrer"
-            className="button"
-          >
-            Berlangganan ke daftar email
-          </a>
         </Section>
       </div>
     </Layout>

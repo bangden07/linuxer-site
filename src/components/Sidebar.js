@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import SearchForm from '../components/SearchForm'
 import linuxer from '../../content/thumbnails/linuxer-200.png'
 
 import { slugify } from '../utils/helpers'
@@ -15,37 +14,16 @@ export default function Sidebar({ post, ...props }) {
         <section>
           <img src={linuxer} alt="Linuxer" className="avatar" />
           <p>
-            I'm <Link to="/me">Linuxer</Link>, Media belajar online.
+            Perkenalkan, Linuxer adalah media belajar mengenal linux dan memberikan
+            metode pemebelajaran yang mudah dimengerti.
           </p>
-          <nav>
-            <a
-              href="https://linuxer.substack.com/subscribe"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              Join Newsletter
-            </a>
-            <Link
-              to="/rss.xml"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              RSS Feed
-            </Link>
-            <a
-              href="https://ko-fi.com/linuxer"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
-              Buy me a Coffee
-            </a>
-          </nav>
+          <p>
+            Setiap artikel yang dibagikan bersifat <b>gratis</b>. Kami berharap{' '}
+            <b>dengan adanya Linuxer sebagai platform belajar online</b> yang dapat membantu Anda.
+          </p>
         </section>
         <section>
-          <h3>#Tags</h3>
+          <h3>#Hastag</h3>
           <div className="cell tags">
             {tags &&
               tags.map((tag) => (
@@ -60,13 +38,43 @@ export default function Sidebar({ post, ...props }) {
           </div>
         </section>
         <section>
-          <h3>Diterbitkan</h3>
+          <h3>Dipublikasikan</h3>
           <time>{post.frontmatter.date}</time>
         </section>
         <section>
-          <h3>Cari</h3>
-          <p>Cari apa saja di situs ini.</p>
-          <SearchForm {...props} />
+          <h3>Komentar</h3>
+          <a href="#comments" className="link">
+            Lihat semua komentar
+          </a>
+        </section>
+        <section>
+          <h3>Tetap terhubung dengan kami di</h3>
+          <nav>
+            <a
+              href="https://linuxer.substack.com/subscribe"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <span className="emoji">✉️</span> Email newsletter
+            </a>
+            <Link
+              to="/rss.xml"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <span className="emoji">☢️</span> RSS feed
+            </Link>
+            <a
+              href="https://ko-fi.com/linuxer"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <span className="emoji">☕</span> Buy me a coffee
+            </a>
+          </nav>
         </section>
       </div>
     </aside>
