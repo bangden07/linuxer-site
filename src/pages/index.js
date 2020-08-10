@@ -56,7 +56,7 @@ export default function BlogIndex({ data, ...props }) {
       </section>
       <div className="container">
         <Section title="Terbaru">
-          <Posts data={simplifiedLatest} tags includeDate />
+          <Posts data={simplifiedLatest} tags />
         </Section>
         <Section title="Populer">
           <Posts data={simplifiedPopular} tags />
