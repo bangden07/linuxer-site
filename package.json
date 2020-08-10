@@ -1,5 +1,5 @@
 {
-  "name": "linuxer.or.id",
+  "name": "bangden07",
   "private": false,
   "version": "3.2.0",
   "description": "Media belajar online dan tutorial lengkap tentang linux.",
@@ -45,6 +45,6 @@
     "url": "https://github.com/bangden07/linuxer-site"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/" 
+    "registry": "https://npm.pkg.github.com/bangden07" 
   }
 }
