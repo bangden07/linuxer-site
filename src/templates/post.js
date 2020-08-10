@@ -21,7 +21,7 @@ export default function PostTemplate({ data, pageContext, ...props }) {
     const scriptEl = document.createElement('script')
     scriptEl.async = true
     scriptEl.src = 'https://utteranc.es/client.js'
-    scriptEl.setAttribute('repo', 'taniarascia/comments')
+    scriptEl.setAttribute('repo', 'bangden07/komentar-linuxer')
     scriptEl.setAttribute('issue-term', 'pathname')
     scriptEl.setAttribute('id', 'utterances')
     scriptEl.setAttribute('theme', 'github-light')
