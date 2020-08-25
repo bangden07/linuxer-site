@@ -12,7 +12,7 @@ export default function Nav() {
             </Link>
           </div>
           <div className="flex">
-            <Link to="/me">
+            <Link to="/saya">
               <span className="emoji">❤️</span> Tentang
             </Link>
             <Link to="/blog">

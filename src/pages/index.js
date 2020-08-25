@@ -18,9 +18,16 @@ export default function BlogIndex({ data, ...props }) {
     popular,
   ])
 
-  const Section = ({ title, children, ...props }) => (
+  const Section = ({ title, children, button, ...props }) => (
     <section {...props}>
-      <h2>{title}</h2>
+      <h2>
+        {title}
+        {button && (
+          <Link className="section-button" to="/blog">
+            View all
+          </Link>
+        )}
+      </h2>
       {children}
     </section>
   )
@@ -55,11 +62,11 @@ export default function BlogIndex({ data, ...props }) {
         </div>
       </section>
       <div className="container">
-        <Section title="Terbaru">
-          <Posts data={simplifiedLatest} tags />
+        <Section title="Terbaru" button>
+          <Posts data={simplifiedLatest} tags withDate />
         </Section>
-        <Section title="Populer">
-          <Posts data={simplifiedPopular} tags />
+        <Section title="Populer" button>
+          <Posts data={simplifiedPopular} tags withDate />
         </Section>
       </div>
     </Layout>

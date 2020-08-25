@@ -7,7 +7,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 import '../style.min.css'
-import '../new-moon.css'
+import '../new-moon.min.css'
 
 export default function Layout({ children }) {
   return (

@@ -40,16 +40,17 @@ export default function Posts({ data, tags, showYears, withDate }) {
   })
 
   const years = useMemo(() => Object.keys(postsByYear).reverse(), [postsByYear])
+
   if (showYears) {
     return years.map((year) => (
       <section>
         <h2>{year}</h2>
         <div className={tags ? 'grid posts with-tags' : 'grid posts'}>
-        {postsByYear[year].map((node) => (
+          {postsByYear[year].map((node) => (
             <Cell node={node} tags={tags} withDate={withDate} />
           ))}
-          </div>
-          </section>
+        </div>
+      </section>
     ))
   } else {
     return (
@@ -58,6 +59,6 @@ export default function Posts({ data, tags, showYears, withDate }) {
           <Cell node={node} tags={tags} withDate={withDate} />
         ))}
       </div>
-      )
-    }
+    )
+  }
 }
