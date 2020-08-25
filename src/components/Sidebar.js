@@ -23,7 +23,7 @@ export default function Sidebar({ post, ...props }) {
           </p>
         </section>
         <section>
-          <h3>#Hastag</h3>
+          <h3>Tags</h3>
           <div className="cell tags">
             {tags &&
               tags.map((tag) => (
@@ -42,13 +42,13 @@ export default function Sidebar({ post, ...props }) {
           <time>{post.frontmatter.date}</time>
         </section>
         <section>
-          <h3>Komentar</h3>
+          <h3>Comments</h3>
           <a href="#comments" className="link">
-            Lihat semua diskusi seru
+            Lihat semua diskusi
           </a>
         </section>
         <section>
-          <h3>Tetap terhubung dengan kami</h3>
+          <h3>Tetap terhubung</h3>
           <nav>
             <a
               href="https://linuxer.substack.com/subscribe"
@@ -66,6 +66,11 @@ export default function Sidebar({ post, ...props }) {
             >
               <span className="emoji">☢️</span> RSS feed
             </Link>
+          </nav>
+        </section>
+        <section>
+          <h3>Support</h3>
+          <nav>
             <a
               href="https://ko-fi.com/linuxer"
               target="_blank"
