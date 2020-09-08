@@ -1396,6 +1396,16 @@ a.tag-life:hover {
   color: white;
 }
 
+a.tag-golang {
+  background: #edf2ff;
+  color: #53d4eb;
+}
+
+a.tag-golang:hover {
+  background: #53d4eb;
+  color: #edf2ff;
+}
+
 a.tag-react,
 a.tag-api,
 a.tag-tutorial {
