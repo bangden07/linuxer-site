@@ -1277,18 +1277,23 @@ mark {
 }
 
 a.tag-javascript,
+a.tag-info,
+a.tag-Info,
 a.tag-sql {
   background: #fff3bf;
   color: black;
 }
 
 a.tag-javascript:hover,
+a.tag-info:hover,
+a.tag-Info:hover,
 a.tag-sql:hover {
   background: #ffd43b;
   color: black;
 }
 
 a.tag-linux,
+a.tag-Linux,
 a.tag-git,
 a.tag-snippets,
 a.tag-html {
@@ -1297,6 +1302,7 @@ a.tag-html {
 }
 
 a.tag-linux:hover,
+a.tag-Linux:hover,
 a.tag-git:hover,
 a.tag-snippets:hover,
 a.tag-html:hover {
@@ -1383,6 +1389,7 @@ a.tag-architecture:hover {
 a.tag-php,
 a.tag-redux,
 a.tag-gatsby,
+a.tag-centos,
 a.tag-life {
   background: #f3f0ff;
   color: #6741d9;
@@ -1391,6 +1398,7 @@ a.tag-life {
 a.tag-php:hover,
 a.tag-redux:hover,
 a.tag-gatsby:hover,
+a.tag-centos:hover,
 a.tag-life:hover {
   background: #7950f2;
   color: white;
