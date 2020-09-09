@@ -70,7 +70,7 @@ export default function Sidebar({ post, ...props }) {
         </section>
         <section>
           <h3>Support</h3>
-          <nav>
+          <nav style={{ marginTop: '1rem' }}>
             <a
               href="https://ko-fi.com/linuxer"
               target="_blank"
