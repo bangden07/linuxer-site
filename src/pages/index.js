@@ -10,7 +10,7 @@ import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
 import linuxer from '../../content/thumbnails/logolinuxer-min.png'
 
-export default function BlogIndex({ data, ...props }) {
+export default function BlogIndex({ data }) {
   const latest = data.latest.edges
   const popular = data.popular.edges
   const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest])
@@ -61,7 +61,7 @@ export default function BlogIndex({ data, ...props }) {
           </div>
         </div>
       </section>
-      <div className="container">
+      <div className="container index">
         <Section title="Terbaru" button>
           <Posts data={simplifiedLatest} tags withDate />
         </Section>
