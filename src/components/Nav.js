@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import logo from '../../content/images/logolinuxer-min.png'
 
 export default function Nav() {
   return (
@@ -8,7 +9,15 @@ export default function Nav() {
         <div className="flex">
           <div>
             <Link to="/" className="brand">
-              <span className="emoji">🐧</span> Linuxer
+            <span className="emoji">
+                <img
+                  src={logo}
+                  height="30"
+                  width="30"
+                  alt="Linuxer Logo"
+                />
+              </span>{' '}
+              Linuxer
             </Link>
           </div>
           <div className="flex">

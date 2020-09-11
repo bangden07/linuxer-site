@@ -429,12 +429,13 @@ a.link:hover {
 a.button {
   display: inline-block;
   border: 2px solid var(--link-color);
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
   margin-right: 0.75rem;
   font-weight: 500;
   background: var(--link-color);
   color: white;
   border-radius: 0.35rem;
+  font-size: 0.9rem;
 }
 
 a.button.secondary {
@@ -448,6 +449,13 @@ a.button.secondary:hover {
   border: 2px solid var(--link-color-darker);
   background: var(--link-color-darker);
   color: white;
+}
+
+@media screen and (min-width: 800px) {
+  a.button {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
 }
 
 .lead .image {
@@ -560,7 +568,7 @@ main {
 }
 
 .emoji {
-  margin: 0 0.3rem 0 0.1rem;
+  margin: 0 0.4rem 0 0.1rem;
 }
 
 .navbar {
@@ -587,7 +595,7 @@ main {
   margin: 0 0.05rem;
   color: white;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border: 1px solid transparent;
 }
 
@@ -625,6 +633,9 @@ main {
   white-space: nowrap;
   background: transparent;
   border: none;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .navbar a.brand:hover {
@@ -637,6 +648,7 @@ main {
 
 @media screen and (min-width: 500px) {
   .navbar a {
+    font-size: 0.95rem;
     padding: 0.5rem;
   }
 }
@@ -808,12 +820,20 @@ tbody tr:nth-child(even) {
 }
 
 .new-post {
+  display: inline-block;
   background: #d3f9d8;
   color: #111;
   padding: 0.5rem;
   border-radius: 0.3rem;
   font-size: 0.9rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .new-post {
+    margin-bottom: 0;
+  }
 }
 
 .grid {
@@ -863,6 +883,7 @@ tbody tr:nth-child(even) {
 
 .row {
   display: contents;
+  border-bottom: 1px solid var(--border);
 }
 
 a.cell {
