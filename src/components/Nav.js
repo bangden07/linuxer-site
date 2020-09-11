@@ -12,15 +12,9 @@ export default function Nav() {
             </Link>
           </div>
           <div className="flex">
-            <Link to="/saya">
-              <span className="emoji">❤️</span> Tentang
-            </Link>
-            <Link to="/blog">
-              <span className="emoji">📝</span> Blog
-            </Link>
-            <Link to="/guides">
-              <span className="emoji">📘</span> Panduan
-            </Link>
+          <Link to="/saya">About</Link>
+            <Link to="/blog">Artikel</Link>
+            <Link to="/guides">Panduan</Link>
             <button
               id="dark-mode-button"
               onClick={(event) => {

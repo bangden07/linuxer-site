@@ -11,6 +11,7 @@
   --lighter-background: #e6e8eb;
   --border: #d6d9de;
   --link-color: #5c7cfa;
+  --link-color-darker: #3b5bdb;
   --navbar-color: #4c6ef5;
   --blockquote: #edf2ff;
   --transparent-text: rgba(0, 0, 0, 0.7);
@@ -151,7 +152,7 @@ ul li ul {
 }
 
 ul li ul li {
-  margin: 0.25rem 0;
+  margin: 0;
 }
 
 ol li ol {
@@ -184,8 +185,8 @@ blockquote :not(pre) > code[class*='language-'] {
 
 blockquote a:hover {
   border-radius: 0.35rem;
-  border-bottom: 1px solid #3b5bdb;
-  background: #3b5bdb;
+  border-bottom: 1px solid var(--link-color-darker);
+  background: var(--link-color-darker);
   color: white;
 }
 
@@ -195,7 +196,7 @@ blockquote.quotation {
   background: transparent;
   border-radius: 0;
   border: none;
-  border-left: 11px solid var(--border);
+  border-left: 12px solid var(--border);
 }
 
 blockquote.quotation p {
@@ -210,12 +211,13 @@ blockquote.quotation p {
   blockquote.quotation {
     margin: 2.5rem 0;
     overflow: auto;
+    border-width: 16px;
   }
   blockquote.quotation cite {
     float: right;
   }
   blockquote.quotation p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -343,6 +345,13 @@ aside section {
   margin-bottom: 0;
 }
 
+@media print {
+  aside,
+  .aside-content {
+    display: none;
+  }
+}
+
 .avatar {
   display: block;
   border-radius: 50%;
@@ -419,19 +428,25 @@ a.link:hover {
 
 a.button {
   display: inline-block;
-  border: none;
+  border: 2px solid var(--link-color);
   padding: 1rem 1.5rem;
   margin-right: 0.75rem;
   font-weight: 500;
-  border: 1px solid var(--link-color);
   background: var(--link-color);
   color: white;
   border-radius: 0.35rem;
 }
 
-a.button:hover {
-  border: 1px solid #3b5bdb;
-  background: #3b5bdb;
+a.button.secondary {
+  border: 2px solid #edf2ff;
+  background: #edf2ff;
+  color: #3b5bdb;
+}
+
+a.button:hover,
+a.button.secondary:hover {
+  border: 2px solid var(--link-color-darker);
+  background: var(--link-color-darker);
   color: white;
 }
 
@@ -545,7 +560,7 @@ main {
 }
 
 .emoji {
-  margin: 0 0.25rem 0 0.1rem;
+  margin: 0 0.3rem 0 0.1rem;
 }
 
 .navbar {
@@ -568,7 +583,7 @@ main {
 .footer a {
   background: transparent;
   border-radius: 0.35rem;
-  padding: 0.3rem;
+  padding: 0.25rem;
   margin: 0 0.05rem;
   color: white;
   font-weight: 400;
@@ -583,6 +598,7 @@ main {
 }
 
 .navbar button {
+  font-size: 1rem;
   margin-right: -1rem;
 }
 
@@ -653,6 +669,12 @@ main {
   }
 }
 
+@media print {
+  .navbar {
+    display: none;
+  }
+}
+
 .footer {
   padding: 2rem 0;
 }
@@ -705,7 +727,14 @@ main {
   }
 }
 
+@media print {
+  .footer {
+    display: none;
+  }
+}
+
 table {
+  display: block;
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
@@ -715,7 +744,8 @@ table {
   border-radius: 0.35rem;
 }
 
-thead {
+thead,
+tbody {
   white-space: nowrap;
 }
 
@@ -741,6 +771,12 @@ td {
 
 tbody tr:nth-child(even) {
   background-color: var(--light-background);
+}
+
+@media screen and (min-width: 800px) {
+  table {
+    display: table;
+  }
 }
 
 .flex {
@@ -769,6 +805,15 @@ tbody tr:nth-child(even) {
 
 .justify-center {
   justify-content: center;
+}
+
+.new-post {
+  background: #d3f9d8;
+  color: #111;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  margin-right: 1rem;
 }
 
 .grid {
@@ -803,7 +848,8 @@ tbody tr:nth-child(even) {
   }
 
   .grid.posts {
-    grid-template-columns: 200px 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.25rem;
   }
 
   .grid.lists {
@@ -861,7 +907,7 @@ a.cell {
   .row .cell {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     padding: 0.8rem 0;
   }
   .row.narrow .cell {
@@ -1037,9 +1083,11 @@ header u {
 
 .article-header .description {
   font-size: 1.5rem;
-  margin-top: 2rem;
+  
   color: var(--light-font-color);
   font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -1215,7 +1263,7 @@ time,
   margin: 0.2rem;
   padding: 0.4rem 0.6rem;
   font-size: 0.8rem;
-  border-radius: 0.35rem;
+  border-radius: 16px;
   border-bottom: 0;
   white-space: nowrap;
   line-height: 1;
@@ -1437,6 +1485,21 @@ a.tag-tools:hover {
 @media screen and (min-width: 800px) {
   #dark-mode-button {
     padding: 0.75rem;
+  }
+}
+
+#comments {
+  margin-top: 3rem;
+}
+
+#comments h2 {
+  margin: 0;
+}
+
+@media print {
+  .comments,
+  #comments {
+    display: none;
   }
 }
 
