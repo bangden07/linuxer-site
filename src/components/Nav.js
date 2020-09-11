@@ -59,18 +59,6 @@ export default function Nav() {
                   link.href = '../dark.min.css'
 
                   head.appendChild(link)
-
-                  const message = {
-                    type: 'set-theme',
-                    theme: 'github-dark',
-                  }
-                  let utterances = document.querySelector('iframe')
-                  if (utterances && utterances.contentWindow) {
-                    utterances.contentWindow.postMessage(
-                      message,
-                      'https://utteranc.es'
-                    )
-                  }
                 }
               }}
             >

@@ -19,12 +19,16 @@ export default function PostTemplate({ data, pageContext, ...props }) {
 
   useEffect(() => {
     const scriptEl = document.createElement('script')
+    const theme =
+    typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark'
+      ? 'github-dark'
+      : 'github-light'
     scriptEl.async = true
     scriptEl.src = 'https://utteranc.es/client.js'
     scriptEl.setAttribute('repo', 'bangden07/komentar-linuxer')
     scriptEl.setAttribute('issue-term', 'pathname')
     scriptEl.setAttribute('id', 'utterances')
-    scriptEl.setAttribute('theme', 'github-light')
+    commentScript.setAttribute('theme', theme)
     scriptEl.setAttribute('crossorigin', 'anonymous')
     if (commentBox && commentBox.current) {
       commentBox.current.appendChild(scriptEl)
