@@ -39,7 +39,7 @@
     "eslint": "^7.9.0",
     "eslint-config-react-app": "^5.2.1",
     "gatsby-plugin-manifest": "^2.4.29",
-    "prettier": "2.1.1"
+    "prettier": "2.1.2"
   },
   "repository": {
     "type": "git",
