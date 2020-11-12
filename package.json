@@ -20,7 +20,7 @@
     "gatsby-plugin-local-search": "^1.1.1",
     "gatsby-plugin-netlify": "^2.3.23",
     "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-remark-autolink-headers": "^2.3.15",
     "gatsby-remark-images": "^3.3.31",
     "gatsby-remark-prismjs": "^3.5.16",
